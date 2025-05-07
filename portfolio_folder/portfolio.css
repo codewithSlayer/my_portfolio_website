@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Josefin+Sans&family=Kanit:ital,wght@1,200&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* header part starts */
+.container {
+    display: flex;
+}
+
+.nav-bar {
+    background-color: #262626;
+    height: 100vh;
+    width: 20vw;
+    border-right: 1px solid #5d5c5c;
+    position: fixed;
+    /* left: 0;
+    top: 0; */
+    z-index: 10;
+}
+
+/* logo design */
+
+.logo {
+    height: 20%;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 70px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.first-letter {
+    font-weight: 700;
+    font-family: 'clicker script', cursive;
+    color: #ff6a33;
+    font-size: 3rem;
+}
+
+
+.second-letter {
+    color: white;
+    font-size: 2.5rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+ul li {
+    margin-top: 60px;
+}
+
+ul li a {
+    color: white;
+    transition: .5s;
+    letter-spacing: 2px;
+}
+
+
+ul li a:hover {
+    color: #ff6a33;
+}
+
+
+/* header part ends by now  */
+.main-container{
+    margin-left: 20vw;
+    height: auto ;
+    padding: 0rem 2rem;
+    width: 80vw;
+    background-color: #171717;
+    color:white;
+}
+
+.portfolio-heading{
+    font-size: 3rem;
+}
+
+.underline-one{
+    width: 5em;
+    height: 0.5vh;
+    background-color: #ff6a33;
+    border: none;
+}
+
+.underline-two{
+    width: 3em;
+    height: 0.5vh;
+    background-color: #ff6a33;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    border: none;
+}
+
+.first-part{
+    margin-top: 5rem;
+}
+
+.second-part{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin-bottom: 5vh;
+    place-items: center;
+}
+
+.box{
+    width: 90%;
+    height: 80%;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.last-para{
+    font-size: 2rem;
+    margin: 5vh 0 5vh 0;
+}
+
+@media (width < 1200px){
+    .nav-bar {
+        display: none;
+    }
+    .main-container{
+        width: 100%;
+        margin-left: 0;
+        padding: 0rem 1rem;
+    }
+}
+
+@media (width < 850px){
+    .second-part{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+}
+
+@media (width < 570px){
+    .second-part{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,1fr);
+    }
+    .main-container{
+        padding: .6rem;
+    }
+    .portfolio-heading{
+        font-size: 2.5rem;
+    }
+    .last-para{
+        font-size: 1.7rem;
+        margin: 0;
+    }
+    .first-part{
+        margin-top: 3rem;
+    }
+}
+

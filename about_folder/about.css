@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Josefin+Sans&family=Kanit:ital,wght@1,200&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* header part starts */
+.container {
+    display: flex;
+}
+
+.nav-bar {
+    background-color: #262626;
+    height: 100vh;
+    width: 20vw;
+    border-right: 1px solid #5d5c5c;
+    position: fixed;
+    /* left: 0;
+    top: 0; */
+    z-index: 10;
+}
+
+/* logo design */
+
+.logo {
+    height: 20%;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 70px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.first-letter {
+    font-weight: 700;
+    font-family: 'clicker script', cursive;
+    color: #ff6a33;
+    font-size: 3rem;
+}
+
+
+.second-letter {
+    color: white;
+    font-size: 2.5rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+ul li {
+    margin-top: 60px;
+}
+
+ul li a {
+    color: white;
+    transition: .5s;
+    letter-spacing: 2px;
+}
+
+
+ul li a:hover {
+    color: #ff6a33;
+}
+
+
+/* header part ends by now  */
+
+/* about section starts */
+.main-container {
+    margin-left: 20vw;
+    width: 80vw;
+    height: auto;
+    background-color: #171717;
+    color: white;
+}
+
+/* .main-container{
+    padding-top: 110px;
+    width: 90%;
+    margin: auto;
+    } */
+
+.aboutMe {
+    width: auto;
+    margin: 10vh 0 0 3vw;
+    font-size: 2.8rem;
+}
+
+.underline-one {
+    width: 5em;
+    height: 0.5vh;
+    background-color: #ff6a33;
+    border: none;
+    margin-left: 3vw;
+}
+
+.underline-two {
+    width: 3em;
+    height: 0.5vh;
+    background-color: #ff6a33;
+    margin: 5px 0 60px 3vw;
+    border: none;
+}
+
+.introduction {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    margin-left: 3vw;
+}
+
+.occupation {
+    font-size: 2rem;
+    color: #ff6a33;
+}
+
+.mySummary {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-left: 3vw;
+    width: 95%;
+}
+
+/* about me section ends *
+
+/* personal info starts */
+
+.personalInfo-section {
+    display: flex;
+    margin: 50px 0px;
+    justify-content: space-evenly;
+}
+
+.personal-info {
+    width: 55%;
+    /* padding: 0px 30px; */
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bold {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.btn {
+    transition: all ease-in-out .2s;
+    padding: 15px 50px;
+    background-color: #ff6a33;
+    border-radius: 5px;
+}
+
+.btn a {
+    color: white;
+    font-size: 1.3rem;
+}
+
+
+.btn:active {
+    scale: 0.8;
+}
+
+
+/* .skills-known-other-info {
+    margin-top: 50px;
+} */
+.skills {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sub-contain {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.line {
+    height: 1.2vh;
+    background-color: #262626;
+    border-radius: 5px;
+}
+
+.filling {
+    height: 1.2vh;
+    border-radius: 5px;
+    background-color: #ff6a33;
+}
+
+/* eduction-experience Starts */
+
+.eduction-experience {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.education-container {
+    width: 45%;
+    background-color: #262626;
+    border-radius: 10px;
+    border: 1px solid grey;
+    transition: .2s ease;
+}
+
+.experience-container {
+    width: 45%;
+    background-color: #262626;
+    border-radius: 10px;
+    border: 1px solid grey;
+    height: 50%;
+}
+
+.education {
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 15px;
+}
+
+.experience {
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 15px;
+}
+
+.first-container {
+    margin-left: 40px;
+    margin-bottom: 7vh;
+}
+
+
+.year {
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+}
+
+.fa-calendar {
+    margin-right: 10px;
+}
+
+.branch-ofstudy {
+    font-size: 1.5rem;
+    line-height: 3.9rem;
+}
+
+.about-school {
+    font-size: 1rem;
+    width: 95%;
+    word-spacing: 5px;
+}
+
+@media (width < 1200px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .main-container {
+        width: 100vw;
+        margin-left: 0;
+    }
+
+}
+
+@media (width < 950px) {
+    .personalInfo-section {
+        flex-direction: column;
+    }
+
+    .eduction-experience {
+        flex-direction: column;
+    }
+
+    .personal-info {
+        width: 90%;
+        margin: 0 2rem;
+    }
+
+    .skills {
+        width: 80%;
+        margin: auto;
+        padding: 3rem 0;
+    }
+
+    .education-container {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .experience-container {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .subject {
+        padding: 1.5rem 0;
+    }
+
+}
+
+@media (width < 650px) {
+    .aboutMe {
+        font-size: 2.5rem;
+    }
+
+    .underline-one {
+        width: 6%;
+    }
+
+    .underline-two {
+        width: 4%;
+    }
+
+    .btn {
+        padding: 15px 35px;
+        background-color: #ff6a33;
+        border-radius: 5px;
+    }
+
+    .btn a {
+        color: white;
+        font-size: 1rem;
+    }
+
+    .introduction, .occupation {
+        font-size: 2rem;
+    }
+    .info {flex-direction: column;
+    }
+    .education-container {
+        width: 90%;
+    }
+    .experience-container {
+        width: 90%;
+    }
+}

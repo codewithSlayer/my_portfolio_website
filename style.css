@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Josefin+Sans&family=Kanit:ital,wght@1,200&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* header part starts */
+.container {
+    display: flex;
+}
+
+.nav-bar {
+    background-color: #262626;
+    height: 100vh;
+    min-width: 20vw;
+    border-right: 1px solid #5d5c5c;
+}
+
+/* logo design */
+
+.logo {
+    height: 20%;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 70px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.first-letter {
+    font-weight: 700;
+    font-family: 'clicker script', cursive;
+    color: #ff6a33;
+    font-size: 3rem;
+}
+
+.second-letter {
+    color: white;
+    font-size: 2.5rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+ul li {
+    margin-top: 60px;
+}
+
+ul li a {
+    color: white;
+    transition: .5s;
+    letter-spacing: 2px;
+}
+
+
+ul li a:hover {
+    color: #ff6a33;
+}
+
+
+/* header part ends by now  */
+.main-container {
+    display: flex;
+    height: 100vh;
+    padding: 11rem 0 0 4rem;
+    width: 81vw;
+    background-color: #171717;
+    color: white;
+}
+
+.greetings {
+    font-size: 2.8rem;
+}
+
+.name {
+    color: #ff6a33;
+    text-shadow: 0px 0px 5px #ff6a33;
+}
+
+.image img {
+    max-width: 30vw;
+    min-height: 40vh;
+    /* margin-left: 50px; */
+    filter: drop-shadow(1px 1px 10px #ff6a33);
+}
+
+.aboutMe {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.introduction {
+    width: 60%;
+}
+
+.typing-annimation {
+    margin-top: 20px;
+    font-size: 2.8rem;
+}
+
+.typing-effect {
+    color: #ff6a33;
+    text-shadow: 0px 0px 5px #ff6a33;
+}
+
+.btn {
+    margin-top: 100px;
+    transition: all ease-in-out .2s;
+    width: max-content;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 15px 50px;
+    background-color: #ff6a33;
+    border-radius: 10px;
+}
+
+.btn:active {
+    scale: 0.8;
+}
+
+
+@media (width < 1200px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .main-container {
+        flex-direction: column-reverse;
+        color: white;
+        width: 100%;
+    }
+
+    .introduction {
+        width: 90%;
+    }
+    .image{
+        margin: auto;
+    }
+    
+}
+
+@media (width < 990px){
+    .main-container{
+        padding: 5rem 0 0 2rem;
+    }
+}
